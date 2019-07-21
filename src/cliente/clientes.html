@@ -1,0 +1,29 @@
+<div class="welcome" ng-controller="listaClienteCtrl">
+    <h1 class="welcome-title">{{title}}</h1>
+    <div class="welcome-content">
+        <input class="form-control mb-2 col-md-4 float-right" type="text" ng-model="filtroCliente" placeholder="PESQUISAR...">
+
+        <table class="table table-sm table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>NOME</th>
+                    <th>TELEFONE</th>
+                    <th>DATA DE NASCIMENTO</th>
+                    <th>EMAIL</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="cliente in clientes | filter:filtroCliente track by $index">
+                    <td>{{cliente.ID_CLIENTE}}</td>
+                    <td><a href="#!/detalhesCliente/{{cliente.ID_CLIENTE}}">{{cliente.NOME | uppercase}}</a></td>
+                    <td>{{cliente.TELEFONE}}</td>
+                    <td>{{cliente.DT_NASCIMENTO | date:'dd/MM/yyyy'}}</td>
+                    <td>{{cliente.EMAIL}}</td>
+                    <td>{{cliente.STATUS}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

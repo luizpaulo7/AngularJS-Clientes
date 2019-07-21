@@ -1,0 +1,13 @@
+<div class="container" ng-controller="detalhesClienteCtrl">
+    <div class="details-cliente">
+        <a href="#!/clientes">voltar</a>
+        <h1 class="details-cliente-title">{{cliente.NOME | uppercase}}</h1>
+        <hr>
+        <div class="details-cliente-content">
+            <p> <strong>EMAIL:</strong> {{cliente.EMAIL}}</p>
+            <p> <strong>TELEFONE:</strong> {{cliente.TELEFONE}}</p>
+            <p> <strong>DATA DE NASCIMENTO:</strong> {{cliente.DT_NASCIMENTO | date:'dd/MM/yyyy'}}</p>
+            <p> <strong>STATUS:</strong> {{cliente.STATUS}}</p>
+        </div>
+    </div>
+</div>
