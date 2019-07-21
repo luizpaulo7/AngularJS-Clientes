@@ -1,8 +1,8 @@
-<div class="welcome" ng-controller="listaClienteCtrl">
-    <h1 class="welcome-title">{{title}}</h1>
-    <div class="welcome-content">
-        <input class="form-control mb-2 col-md-4 float-right" type="text" ng-model="filtroCliente" placeholder="PESQUISAR...">
-
+<div class="clientes container" ng-controller="listaClienteCtrl">
+    <h1 class="clientes-title">{{title}}</h1>
+    <div class="clientes-content">
+        <a href="#!/cadastro">CADASTRAR NOVO CLIENTE</a>
+        <input class="form-control col-md-4" type="text" ng-model="filtroCliente" placeholder="PESQUISAR...">
         <table class="table table-sm table-striped">
             <thead>
                 <tr>

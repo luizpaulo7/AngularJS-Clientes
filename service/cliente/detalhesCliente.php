@@ -2,11 +2,6 @@
 
 require_once("../db/conexao.php");
 
-// // $data = file_get_contents("php://input");
-// // $request = json_decode($data);
-// echo "<pre>";
-// print_r($_GET);
-// exit;
 $sql = ("SELECT * FROM 
                     TBL_CLIENTE 
                 WHERE 

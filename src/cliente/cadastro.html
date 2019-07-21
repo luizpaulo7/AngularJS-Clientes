@@ -1,0 +1,34 @@
+<div class="cadastro-cliente container">
+    <a href="#!/clientes">VOLTAR</a>
+    <h1 class="cadastro-cliente-title">Cadastro</h1>
+    <div class="cadastro-cliente-content">
+        <form name="formularioCadastroCliente">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="NOME">NOME</label>
+                    <input class="form-control" type="text" name="NOME" ng-model="NOME" ng-required="true"
+                        placeholder="NOME...">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="TELEFONE">TELEFONE</label>
+                    <input class="form-control" type="text" name="TELEFONE" ng-model="TELEFONE" ng-required="true"
+                        placeholder="TELEFONE...">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="DT_NASCIMENTO">DATA DE NACIMENTO</label>
+                    <input class="form-control" type="text" name="DT_NASCIMENTO" ng-model="DT_NASCIMENTO"
+                        ng-required="true" placeholder="DATA DE NASCIMENTO...">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="EMAIL">EMAIL</label>
+                    <input class="form-control" type="email" name="EMAIL" ng-model="EMAIL" ng-required="true"
+                        placeholder="EMAIL...">
+                </div>
+                <div class="form-group col-md-12">
+                    <button class="btn btn-block btn-success" type="button"
+                        ng-disabled="formularioCadastroCliente.$invalid">CADASTRAR</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

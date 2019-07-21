@@ -3,13 +3,12 @@ angular.module(appName).controller('detalhesClienteCtrl', function ($scope, $htt
     var detalhesCliente = function () {
         $http.get('http://localhost/AngularJS-Clientes/service/cliente/detalhesCliente.php', {
             params: {
-                ID_CLIENTE:  $routeParams.id
+                ID_CLIENTE: $routeParams.id
             }
         }).then(function success(response) {
-            const { data } = response;
-
-            $scope.cliente = data;
-
+            $scope.cliente = response.data;
+        }, function error(response) {
+            console.log(response);
         });
     };
 

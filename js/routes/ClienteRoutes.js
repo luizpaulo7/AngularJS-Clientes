@@ -9,6 +9,11 @@ angular.module(appName).config(function($routeProvider) {
         templateUrl: '../src/cliente/detalhes.html',
         controller: ''
     });
+    
+    $routeProvider.when("/cadastro", {
+        templateUrl: '../src/cliente/cadastro.html',
+        controller: ''
+    });
 
     $routeProvider.otherwise({ redirectTo: "/clientes" });
 });

@@ -1,25 +1,36 @@
-.welcome {
+.clientes {
     /* max-width: 720px; */
     /* height: 350px; */
     margin: 0 auto;
 }
 
-.welcome-title {
+.clientes-title {
     background: #f5f5f5;
     text-align: center;
     padding: 10px;
 }
 
-.welcome-content {
-    width: 100%;
+.clientes-content input{
+    float: right;
+    margin-bottom: 10px;
     /* height: 200px; */
 }
 
-.details-cliente {
+.detalhes-cliente {
     background: #f5f5f5;
     padding: 20px;
 }
 
-.details-cliente-title {
+.detalhes-cliente-title {
+    text-align: center;
+}
+
+.cadastro-cliente{
+    max-width: 520px;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.cadastro-cliente-title{
     text-align: center;
 }
